@@ -1,0 +1,11 @@
+
+.btn {
+    background-color:lightseagreen;
+    color:black;
+    font-weight: bold;
+}
+
+.form-control {
+    max-width: 30%;
+    border:solid #7DCDC9;
+}

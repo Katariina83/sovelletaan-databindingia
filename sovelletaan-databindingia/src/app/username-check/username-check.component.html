@@ -1,11 +1,14 @@
-<section class="container">
-  <h3>Give a username:</h3>
-  
- <!--Tässä on Two-Way-binding-->
- <input type="text" class="form-control mb-3"[( ngModel )]="userName"> 
-
- <!--Lisätään painike-->
-  <button class="btn btn-primary"[disabled] = "getDisabled" (click)="onEmptyInput()">Add User</button>
-<p>{{ userName }}</p>
-  <hr>
+<section>
+        <label>Enter a username:</label>
+        <p></p>
+        <input type="text"
+              placeholder="username"
+              class="form-control"
+              (input)="onUpdateUserName($event)">
+              <p></p>
+        <p>Your username is: {{ userName }}</p>
+      
+        <button class="btn"  
+              [disabled]="userName === ''"
+              (click)="onClearUsername()">Clear</button>
 </section>
