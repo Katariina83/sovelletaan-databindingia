@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+html {
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    border: black solid;
+    padding: 1rem;
+    background-color: blanchedalmond;
+}
+
+.btn {
+    background-color:lightseagreen;
+    color:black;
+    margin-top: 1rem;
+}
+
